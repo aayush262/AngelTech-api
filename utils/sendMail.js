@@ -16,7 +16,7 @@ module.exports = sendMail = async(options) => {
             }
         })
         const message ={   
-            from: `Sack <noreply@sack.com>`,
+            from: `Angel Tech <noreply@sack.com>`,
             to: options.email,
             subject: options.subject,
             html: options.html

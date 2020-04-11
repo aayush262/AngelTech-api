@@ -72,7 +72,7 @@ module.exports={
             
             </div></div>`
             await sendMail({
-                email:'aayushlama26@gmail.com',
+                email:'angeltechnepal@gmail.com',
                 subject:'From AngelTech Website',
                 html
             })

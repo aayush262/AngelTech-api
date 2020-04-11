@@ -5,12 +5,13 @@ module.exports = sendMail = async(options) => {
         let transporter = nodemailer.createTransport({
             host: 'smtp.gmail.com',
             port: 465,
-            service:'Gmail',
+            secure: true,
             auth:{
                 user: 'testforsmtp123456789@gmail.com',
                 pass: 'ayoush26@123'
             },
-            tls:{
+            tls: {
+                // do not fail on invalid certs
                 rejectUnauthorized: false
             }
         })

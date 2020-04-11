@@ -9,10 +9,13 @@ const mailRoutes = require('./routes/mail');
 app.use(bodyParser.json());
 app.use(cors());
 
+app.use(mailRoutes);
+
 app.use('/',(req,res,next)=>{
     res.send('ANGEL TECH backend documentation ..coming soon')
 })
-app.use(mailRoutes);
+
+
 
 const port = process.env.PORT||8080;
 

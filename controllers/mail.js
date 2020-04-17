@@ -1,4 +1,5 @@
 const sendMail = require('./../utils/sendMail');
+const accessSpreadsheet = require('./../utils/accessSpreadsheet');
 
 module.exports={
     postMail:async(req,res,next)=>{
@@ -71,6 +72,12 @@ module.exports={
             </tbody></table><div class="yj6qo"></div><div class="adL">
             
             </div></div>`
+            await accessSpreadsheet({
+                firstName,
+                lastName,
+                email,
+                message
+            })
             await sendMail({
                 email:'angeltechnepal@gmail.com',
                 subject:'From AngelTech Website',

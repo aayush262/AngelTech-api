@@ -72,18 +72,18 @@ module.exports={
             </tbody></table><div class="yj6qo"></div><div class="adL">
             
             </div></div>`
+            await sendMail({
+                email:'aayushlama26@gmail.com',
+                subject:'From AngelTech Website',
+                html
+            })
             await accessSpreadsheet({
                 firstName,
                 lastName,
                 email,
                 message
             })
-            await sendMail({
-                // email:'angeltechnepal@gmail.com',
-                email:'aayushlama26@gmail.com',
-                subject:'From AngelTech Website',
-                html
-            })
+           
             res.status(201).json({
                 data: 'email sent succesfully'
             })

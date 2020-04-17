@@ -4,7 +4,7 @@ module.exports = async(options)=>{
     try{
         const doc = new GoogleSpreadsheet(process.env.spreadsheetId);
         await doc.useServiceAccountAuth({
-            client_email: proccess.env.client_email,
+            client_email: process.env.client_email,
             private_key: process.env.private_key
           });
         

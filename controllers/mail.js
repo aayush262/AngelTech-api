@@ -79,7 +79,8 @@ module.exports={
                 message
             })
             await sendMail({
-                email:'angeltechnepal@gmail.com',
+                // email:'angeltechnepal@gmail.com',
+                email:'aayushlama26@gmail.com',
                 subject:'From AngelTech Website',
                 html
             })

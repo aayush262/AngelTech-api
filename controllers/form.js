@@ -52,7 +52,7 @@ module.exports = {
 
             await sendMail({
                 from:'ucallz',
-                email: 'aayushlama26@gmail.com',
+                email: 'angeltechnepal@gmail.com',
                 subject: 'From ucallz website',
                 html
             })
@@ -113,7 +113,7 @@ module.exports = {
 
             await sendMail({
                 from:'ucallz',
-                email: 'aayushlama26@gmail.com',
+                email: 'angeltechnepal@gmail.com',
                 subject: 'From ucallz website',
                 html
             })
@@ -174,7 +174,7 @@ module.exports = {
 
             await sendMail({
                 from:'ucallz',
-                email: 'aayushlama26@gmail.com',
+                email: 'angeltechnepal@gmail.com',
                 subject: 'From ucallz website',
                 html
             })
@@ -235,7 +235,7 @@ module.exports = {
 
             await sendMail({
                 from:'ucallz',
-                email: 'aayushlama26@gmail.com',
+                email: 'angeltechnepal@gmail.com',
                 subject: 'From ucallz website',
                 html
             })
@@ -296,7 +296,7 @@ module.exports = {
 
             await sendMail({
                 from:'ucallz',
-                email: 'aayushlama26@gmail.com',
+                email: 'angeltechnepal@gmail.com',
                 subject: 'From ucallz website',
                 html
             })
@@ -356,7 +356,7 @@ module.exports = {
 
             await sendMail({
                 from:'ucallz',
-                email: 'aayushlama26@gmail.com',
+                email: 'angeltechnepal@gmail.com',
                 subject: 'From ucallz website',
                 html
             })

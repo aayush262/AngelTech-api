@@ -13,21 +13,44 @@ module.exports = {
                 message
             } = req.body;
 
-            const html = `<table>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Subject</th>
-                <th>Message</th>
-            </tr>
-            <tr>
-                <td>${name}</td>
-                <td>${email}</td>
-                <td>${subject}</td>
-                <td>${message}</td>
-            </tr>
-          <tr>    
-            </table>`
+            const html = `
+            <table width="650px" height="0" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" style="border-collapse:collapse">
+                <tbody>
+                <tr>
+                    <td valign="middle" align="left" style="padding-top:12px;padding-bottom:12px;padding-left:48px">
+                        <img width="102px" src="https://www.ucallz.com/logo.png?fbclid=IwAR2p0LjpK30mnNMqzYCbB5VdW5yu7rwovUw2H3V4BMono0wdpvQCbEJkbwU" style="outline:none!important;border:0" class="CToWUd">
+                    </td>
+                </tr>
+            </tbody></table>
+            <table id="m_7987003750038098721table-gray-wrapper" width="650px" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f5fa" style="border-collapse:collapse">
+                <tbody><tr><td>
+           
+            <table width="570px" border="0" align="center" cellpadding="0" cellspacing="0" style="table-layout:fixed;margin-bottom:48px;border-collapse:collapse" bgcolor="#ffffff">
+                <tbody>
+                <tr>
+                    <td style="font-family:Nunito Sans,Arial,Sans-Serif;font-size:18px;line-height:27px;color:#00000;padding:48px">
+                    <strong>Name</strong><br>
+                            ${name}<br><br>
+                                    
+                    <strong>Email</strong><br>
+                            ${email}<br><br>
+                                    
+                    <strong>Subject</strong><br>
+                            ${subject}<br><br>
+                                    
+                    <strong>Message</strong><br>
+                            ${message}
+                    </td>
+                </tr>
+            </tbody>
+            
+        
+        
+          <br>
+        </table>
+        
+        
+        `
 
             const doc = new GoogleSpreadsheet('1gE9n4FP-xfYTAxYxGMhETKz8mSwXEjFfLvzNOEaBswM');
             await doc.useServiceAccountAuth({
@@ -74,21 +97,40 @@ module.exports = {
                 message
             } = req.body;
 
-            const html = `<table>
+            const html = ` <table width="650px" height="0" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" style="border-collapse:collapse">
+            <tbody>
             <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Company</th>
-                <th>Message</th>
+                <td valign="middle" align="left" style="padding-top:12px;padding-bottom:12px;padding-left:48px">
+                    <img width="102px" src="https://www.ucallz.com/logo.png?fbclid=IwAR2p0LjpK30mnNMqzYCbB5VdW5yu7rwovUw2H3V4BMono0wdpvQCbEJkbwU" style="outline:none!important;border:0" class="CToWUd">
+                </td>
             </tr>
+        </tbody></table>
+        <table id="m_7987003750038098721table-gray-wrapper" width="650px" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f5fa" style="border-collapse:collapse">
+            <tbody><tr><td>
+       
+        <table width="570px" border="0" align="center" cellpadding="0" cellspacing="0" style="table-layout:fixed;margin-bottom:48px;border-collapse:collapse" bgcolor="#ffffff">
+            <tbody>
             <tr>
-                <td>${name}</td>
-                <td>${email}</td>
-                <td>${company}</td>
-                <td>${message}</td>
+                <td style="font-family:Nunito Sans,Arial,Sans-Serif;font-size:18px;line-height:27px;color:#00000;padding:48px">
+                <strong>Name</strong><br>
+                        ${name}<br><br>
+                                
+                <strong>Email</strong><br>
+                        ${email}<br><br>
+                                
+                <strong>Company</strong><br>
+                        ${company}<br><br>
+                                
+                <strong>Message</strong><br>
+                        ${message}
+                </td>
             </tr>
-          <tr>    
-            </table>`
+        </tbody>
+        
+    
+    
+      <br>
+    </table>`
 
             const doc = new GoogleSpreadsheet('1gE9n4FP-xfYTAxYxGMhETKz8mSwXEjFfLvzNOEaBswM');
             await doc.useServiceAccountAuth({
@@ -135,21 +177,40 @@ module.exports = {
                 message
             } = req.body;
 
-            const html = `<table>
+            const html = ` <table width="650px" height="0" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" style="border-collapse:collapse">
+            <tbody>
             <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Company</th>
-                <th>Message</th>
+                <td valign="middle" align="left" style="padding-top:12px;padding-bottom:12px;padding-left:48px">
+                    <img width="102px" src="https://www.ucallz.com/logo.png?fbclid=IwAR2p0LjpK30mnNMqzYCbB5VdW5yu7rwovUw2H3V4BMono0wdpvQCbEJkbwU" style="outline:none!important;border:0" class="CToWUd">
+                </td>
             </tr>
+        </tbody></table>
+        <table id="m_7987003750038098721table-gray-wrapper" width="650px" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f5fa" style="border-collapse:collapse">
+            <tbody><tr><td>
+       
+        <table width="570px" border="0" align="center" cellpadding="0" cellspacing="0" style="table-layout:fixed;margin-bottom:48px;border-collapse:collapse" bgcolor="#ffffff">
+            <tbody>
             <tr>
-                <td>${name}</td>
-                <td>${email}</td>
-                <td>${company}</td>
-                <td>${message}</td>
+                <td style="font-family:Nunito Sans,Arial,Sans-Serif;font-size:18px;line-height:27px;color:#00000;padding:48px">
+                <strong>Name</strong><br>
+                        ${name}<br><br>
+                                
+                <strong>Email</strong><br>
+                        ${email}<br><br>
+                                
+                <strong>Company</strong><br>
+                        ${company}<br><br>
+                                
+                <strong>Message</strong><br>
+                        ${message}
+                </td>
             </tr>
-          <tr>    
-            </table>`
+        </tbody>
+        
+    
+    
+      <br>
+    </table>`
 
             const doc = new GoogleSpreadsheet('1gE9n4FP-xfYTAxYxGMhETKz8mSwXEjFfLvzNOEaBswM');
             await doc.useServiceAccountAuth({
@@ -196,21 +257,40 @@ module.exports = {
                 message
             } = req.body;
 
-            const html = `<table>
+            const html = ` <table width="650px" height="0" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" style="border-collapse:collapse">
+            <tbody>
             <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Company</th>
-                <th>Message</th>
+                <td valign="middle" align="left" style="padding-top:12px;padding-bottom:12px;padding-left:48px">
+                    <img width="102px" src="https://www.ucallz.com/logo.png?fbclid=IwAR2p0LjpK30mnNMqzYCbB5VdW5yu7rwovUw2H3V4BMono0wdpvQCbEJkbwU" style="outline:none!important;border:0" class="CToWUd">
+                </td>
             </tr>
+        </tbody></table>
+        <table id="m_7987003750038098721table-gray-wrapper" width="650px" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f5fa" style="border-collapse:collapse">
+            <tbody><tr><td>
+       
+        <table width="570px" border="0" align="center" cellpadding="0" cellspacing="0" style="table-layout:fixed;margin-bottom:48px;border-collapse:collapse" bgcolor="#ffffff">
+            <tbody>
             <tr>
-                <td>${name}</td>
-                <td>${email}</td>
-                <td>${company}</td>
-                <td>${message}</td>
+                <td style="font-family:Nunito Sans,Arial,Sans-Serif;font-size:18px;line-height:27px;color:#00000;padding:48px">
+                <strong>Name</strong><br>
+                        ${name}<br><br>
+                                
+                <strong>Email</strong><br>
+                        ${email}<br><br>
+                                
+                <strong>Company</strong><br>
+                        ${company}<br><br>
+                                
+                <strong>Message</strong><br>
+                        ${message}
+                </td>
             </tr>
-          <tr>    
-            </table>`
+        </tbody>
+        
+    
+    
+      <br>
+    </table>`
 
             const doc = new GoogleSpreadsheet('1gE9n4FP-xfYTAxYxGMhETKz8mSwXEjFfLvzNOEaBswM');
             await doc.useServiceAccountAuth({
@@ -257,21 +337,40 @@ module.exports = {
                 message
             } = req.body;
 
-            const html = `<table>
+            const html = ` <table width="650px" height="0" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" style="border-collapse:collapse">
+            <tbody>
             <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Company</th>
-                <th>Message</th>
+                <td valign="middle" align="left" style="padding-top:12px;padding-bottom:12px;padding-left:48px">
+                    <img width="102px" src="https://www.ucallz.com/logo.png?fbclid=IwAR2p0LjpK30mnNMqzYCbB5VdW5yu7rwovUw2H3V4BMono0wdpvQCbEJkbwU" style="outline:none!important;border:0" class="CToWUd">
+                </td>
             </tr>
+        </tbody></table>
+        <table id="m_7987003750038098721table-gray-wrapper" width="650px" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f5fa" style="border-collapse:collapse">
+            <tbody><tr><td>
+       
+        <table width="570px" border="0" align="center" cellpadding="0" cellspacing="0" style="table-layout:fixed;margin-bottom:48px;border-collapse:collapse" bgcolor="#ffffff">
+            <tbody>
             <tr>
-                <td>${name}</td>
-                <td>${email}</td>
-                <td>${company}</td>
-                <td>${message}</td>
+                <td style="font-family:Nunito Sans,Arial,Sans-Serif;font-size:18px;line-height:27px;color:#00000;padding:48px">
+                <strong>Name</strong><br>
+                        ${name}<br><br>
+                                
+                <strong>Email</strong><br>
+                        ${email}<br><br>
+                                
+                <strong>Company</strong><br>
+                        ${company}<br><br>
+                                
+                <strong>Message</strong><br>
+                        ${message}
+                </td>
             </tr>
-          <tr>    
-            </table>`
+        </tbody>
+        
+    
+    
+      <br>
+    </table>`
 
             const doc = new GoogleSpreadsheet('1gE9n4FP-xfYTAxYxGMhETKz8mSwXEjFfLvzNOEaBswM');
             await doc.useServiceAccountAuth({
@@ -317,21 +416,40 @@ module.exports = {
                 message
             } = req.body;
 
-            const html = `<table>
+            const html = ` <table width="650px" height="0" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" style="border-collapse:collapse">
+            <tbody>
             <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Company</th>
-                <th>Message</th>
+                <td valign="middle" align="left" style="padding-top:12px;padding-bottom:12px;padding-left:48px">
+                    <img width="102px" src="https://www.ucallz.com/logo.png?fbclid=IwAR2p0LjpK30mnNMqzYCbB5VdW5yu7rwovUw2H3V4BMono0wdpvQCbEJkbwU" style="outline:none!important;border:0" class="CToWUd">
+                </td>
             </tr>
+        </tbody></table>
+        <table id="m_7987003750038098721table-gray-wrapper" width="650px" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f5fa" style="border-collapse:collapse">
+            <tbody><tr><td>
+       
+        <table width="570px" border="0" align="center" cellpadding="0" cellspacing="0" style="table-layout:fixed;margin-bottom:48px;border-collapse:collapse" bgcolor="#ffffff">
+            <tbody>
             <tr>
-                <td>${name}</td>
-                <td>${email}</td>
-                <td>${company}</td>
-                <td>${message}</td>
+                <td style="font-family:Nunito Sans,Arial,Sans-Serif;font-size:18px;line-height:27px;color:#00000;padding:48px">
+                <strong>Name</strong><br>
+                        ${name}<br><br>
+                                
+                <strong>Email</strong><br>
+                        ${email}<br><br>
+                                
+                <strong>Company</strong><br>
+                        ${company}<br><br>
+                                
+                <strong>Message</strong><br>
+                        ${message}
+                </td>
             </tr>
-          <tr>    
-            </table>`
+        </tbody>
+        
+    
+    
+      <br>
+    </table>`
 
             const doc = new GoogleSpreadsheet('1gE9n4FP-xfYTAxYxGMhETKz8mSwXEjFfLvzNOEaBswM');
             await doc.useServiceAccountAuth({
